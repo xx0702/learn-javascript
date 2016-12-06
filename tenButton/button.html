@@ -19,13 +19,16 @@
 
 </body>
 <script>
-   var button=document.getElementsByTagName("input");
-  
-   function alertValue(){
-      alert(this.value);
-   }
-  for(var i=0;i<=button.length;i++){
-   button[i].onclick=alertValue;
-  }
+	var button=document.getElementsByTagName("input"); 
+
+ 	for(var i=0;i<button.length;i++){ 
+ 			
+ 		button[i].onclick=function(num){
+ 			return function alertValue(){ 
+
+ 				alert(num); 
+ 			}; 
+ 		}(i)
+ 	} 
 </script>
 </html>
