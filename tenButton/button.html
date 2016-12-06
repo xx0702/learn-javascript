@@ -19,28 +19,13 @@
 
 </body>
 <script>
-   var button0=document.getElementById("0");
-   var button1=document.getElementById("1");
-   var button2=document.getElementById("2");
-   var button3=document.getElementById("3");
-   var button4=document.getElementById("4");
-   var button5=document.getElementById("5");
-   var button6=document.getElementById("6");
-   var button7=document.getElementById("7");
-   var button8=document.getElementById("8");
-   var button9=document.getElementById("9");
+   var button=document.getElementsByTagName("input");
+  
    function alertValue(){
-   	alert(this.value);
+      alert(this.value);
    }
-   button0.onclick=alertValue;
-   button1.onclick=alertValue;
-   button2.onclick=alertValue;
-   button3.onclick=alertValue;
-   button4.onclick=alertValue;
-   button5.onclick=alertValue;
-   button6.onclick=alertValue;
-   button7.onclick=alertValue;
-   button8.onclick=alertValue;
-   button9.onclick=alertValue;
+  for(var i=0;i<=button.length;i++){
+   button[i].onclick=alertValue;
+  }
 </script>
 </html>
